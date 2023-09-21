@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Saestheticz's Works </title>
+	<style> 	
+		body {
+			background-image: url('https://cdn.discordapp.com/attachments/1127147313048072213/1154039790619066429/pinky.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: 0;
+			padding: 0;
+		}
+	
+		.navbar {
+			background-color: #ffc0cb;
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			display: block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.navbar a:hover {
+			background-color: #ffe4e1;
+			color: black;
+		}
+		
+		.navbar .title {
+			float: right;
+			color: black;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		
+		.main-text {
+			text-align: center;
+		}
+		
+		.main-text p {
+			color: var(--second-color);
+			font-size: 30px;
+			margin-bottom: 15px;
+		}
+		
+		.main-text h2 {
+			font-size: var(--h2-font);
+			line-height: 1;
+		}
+		
+		.portfolio-content {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+			align-items: center;
+			gap: 2.5rem;
+			margin-top: 5rem;
+		}
+		
+		.row{
+			position: relative;
+			overflow: hidden;
+			border-radius: 8px;
+			cursor: pointer;
+		}
+		
+		.row img{
+			width: 15%;
+			border-radius: 8px;
+			display: block;
+			transition: transform 0.5s;
+		}
+		
+		.layer{
+			width: 15%;
+			background: linear-gradient(rgba(0,0,0,0.1), #ff004f);
+			position: absolute;
+			border-radius: 8px;
+			left: 0;
+			bottom: 0;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 0 40px;
+			transition: height 0.5s;
+		}
+
+		div .header{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-transform: uppercase;
+		}
+		div .header h1{
+			font-size: 50px;
+			font-style: italic;
+			color: black;
+		}
+		div .frd{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		div .frd-card{
+			/* padding: 25px;
+			margin: 30px; */
+			/* border-radius: 10%; */
+			align-items: center;
+			width: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		div .frd-card .frd-img{
+			padding: 10px 30px;
+			text-align: center;
+		}
+		div .frd-card .frd-img img{
+			width: 50%;
+			border-radius: 50%;
+			border: 2px solid black;
+			padding: 20px 0;
+		}
+		div .frd .frd-card .frd_detail{
+			text-align: center;
+			color: black;
+		}
+		div .frd .frd-card .frd_detail h2{
+			text-transform: uppercase; 
+		}
+	</style>
+</head>
+
+<body>
+	<div class="navbar">
+		<a href="home.html">Home &#x2764;</a>
+		<a href="about.html">About Me &#x2764;</a>
+		<a href="portfolio.html">My Portfolio &#x2764;</a>
+		<a href="contact.html">Contact Me &#x2764;</a>
+		<a href="#" class="title">&#x2764; Saestheticz's Works! &#x2764;</a>
+	</div>
+	
+	<section class="portfolio" id="portfolio">
+	<div class="main-text">
+		<p><b><u>My Portfolio</u></b></p>
+		<h2><span>Let's Check Out</span> My Latest Project!</h2>
+	</div>
+
+		<div class="content">
+			<div class="frd">
+				<div class="frd-card">
+					<img src="https://cdn.discordapp.com/attachments/1127147313048072213/1154305141277728819/E-Commerce_Orders_Report_Dashboard-1.png" alt=""  style="width: 50%; border-radius: 10px;">
+					<div class="frd_detail">
+						<h2>Project 1 - Looker</h2>
+						<p>E-Commerce Orders Report Dashboard</p>
+					</div>
+				</div>
+				<div class="frd-card">
+					<img src="https://cdn.discordapp.com/attachments/1127147313048072213/1154305140904427520/Amazon_Prime_Video_Study_Case-1.png" alt=""  style="width: 50%; border-radius: 10px;">
+					<div class="frd_detail">
+						<h2>Project 2 - Looker</h2>
+						<p>Amazon Prime Video Analysis</p>
+					</div>
+				</div>
+				<div class="frd-card">
+					<img src="https://cdn.discordapp.com/attachments/1127147313048072213/1154305140514365562/Airbnb_NYC_2019_Listings_Dashboard_Fix-1.png" alt=""  style="width: 50%; border-radius: 10px;">
+					<div class="frd_detail">
+						<h2>Project 3 - Looker</h2>
+						<p>Airbnb NYC 2019 Listings Dashboard</p>
+					</div>
+				</div>
+				<div class="frd">
+					<div class="frd-card">
+						<img src="https://cdn.discordapp.com/attachments/1127147313048072213/1154060928019603536/Screenshot_2023-08-11_124335.png" alt=""  style="width: 50%; border-radius: 10px;">
+						<div class="frd_detail">
+							<h2>Project 4 - Tableau</h2>
+							<p>Amazon Prime Video Analysis</p>
+						</div>
+					</div>
+					<div class="frd-card">
+						<img src="https://cdn.discordapp.com/attachments/1127147313048072213/1154060928342573116/Screenshot_2023-09-12_103647.png" alt=""  style="width: 50%; border-radius: 10px;">
+						<div class="frd_detail">
+							<h2>Project 5 - Tableau</h2>
+							<p>Airbnb NYC 2023 Report Dashboard</p>
+						</div>
+					</div>
+					<div class="frd-card">
+						<img src="https://cdn.discordapp.com/attachments/1127147313048072213/1154339706566348810/Screenshot_2023-09-21_154722.png" alt=""  style="width: 50%; border-radius: 10px;">
+						<div class="frd_detail">
+							<h2>Project 6 - Excel</h2>
+							<p>Dairy Goods Sales Analysis</p>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+	
+</body>
+</html>

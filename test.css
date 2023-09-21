@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+    height: 100px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 20%;
+}
+nav ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    letter-spacing: 5px;
+    transition: 0.2s;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+}
+.menu-toggle i{
+    color: white;
+    font-size: 25px;
+}
+
+/* lanscape */
+@media screen and (max-width:768px) {
+    nav ul{
+        width: 50%;
+    }
+}
+/* lanscape */
+/* mobile */
+@media screen and (max-width:576px) {
+    .menu-toggle{
+        display: flex;
+    }
+    nav .logo{
+        padding-left: 75px;
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 100px;
+        flex-direction: column;
+        background-color: black;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* mobile */
+/* Navbar */
+/* Content */
+div .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color:  black
+}
+div .header h1{
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+}
+div .frd{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+div .frd-card{
+    padding: 25px;
+    margin: 30px;
+    border-radius: 10%;
+    align-items: center;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div .frd-card .frd-img{
+    padding: 10px 30px;
+    text-align: center;
+}
+div .frd-card .frd-img img{
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 20px 0;
+}
+div .frd .frd-card .frd_detail{
+    text-align: center;
+    color: white;
+}
+div .frd .frd-card .frd_detail h2{
+    text-transform: uppercase; 
+}
+/* Content */
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 50px;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.footer-card{
+    /* background-color: brown; */
+    padding: 25px;
+    margin: 10px;
+}
+.footer-card ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-card ul li{
+    list-style: none;
+    font-size: 25px;
+    padding: 30px;
+}
+.footer-card ul li a{
+    color: white;
+    border: 2px solid white;
+    padding:  15px 25px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.footer-card ul li a:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+.footer-card p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.footer-copy{
+    font-size: 15px;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+@media screen and (max-width:576px){
+    .footer-card ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Footer */
